@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCody - JavaScript</title>
+    <link rel="icon" href="image/icon.jpg" class="rounded-pill">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Josefin+Sans:wght@500&family=Roboto:wght@500&family=Tajawal:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light bg-transparent fs-6">
+            <div class="container">
+                <a class="navbar-brand fs-2 fw-bold" href="acceuil.html"><img src="image/icon.jpg" style="width:70px;" class="rounded-pill">   WebCody</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto  mb-lg-0">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" aria-current="page" href="acceuil.html" target="_blank">Home</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="html.html" target="_blank">HTML</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="css.html" target="_blank">CSS</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active" href="javascript.html">JavaScript</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-1 mb-lg-0 action-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html" target="_blank">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid">
+        <div class="container">
+            <h1 class="my-5 text-center" style="color: rgb(189, 37, 100);">JavaScript</h1>
+            <div>
+                <h2 class="h2-2">What is JavaScript?</h2><br>
+                <p>JavaScript is a high-level, interpreted programming language that adds interactivity to your website. It is one of the core technologies of the World Wide Web, along with HTML and CSS.</p>
+                <p>JavaScript is versatile and used widely in web development for:</p>
+                <ul>
+                    <li>Adding behavior to web pages (e.g., responding to user actions like clicks, scrolls, etc.)</li>
+                    <li>Building dynamic web applications (e.g., updating content without reloading the page)</li>
+                    <li>Creating interactive games and animations</li>
+                    <li>Handling asynchronous operations (e.g., fetching data from servers)</li>
+                </ul>
+                <p>Learning JavaScript is essential for anyone aiming to become a front-end web developer.</p>
+            </div>
+            <h2 class="h2-2">Language Basics Crash Course</h2><br>
+            <div>
+                <p>To give you a better understanding of how JavaScript works, let's explain some of the core features of the language. It's worth noting that these features are common to all programming languages. If you master these fundamentals, you have a head start on coding in other languages too!</p>
+                <h3>Variables</h3>
+                <p>Variables are containers that store values. You start by declaring a variable with the <code>let</code> keyword, followed by the name you give to the variable:</p>
+                <pre><code>let myVariable;</code></pre>
+                <p>A semicolon at the end of a line indicates where a statement ends. It is only required when you need to separate statements on a single line. However, some people believe it's good practice to have semicolons at the end of each statement. There are other rules for when you should and shouldn't use semicolons. For more details, see Your Guide to Semicolons in JavaScript.</p>
+                <p>You can name a variable nearly anything, but there are some restrictions. JavaScript is case sensitive. This means <code>myVariable</code> is not the same as <code>myvariable</code>. After declaring a variable, you can give it a value:</p>
+                <pre><code>let myVariable = "Bob";</code></pre>
+                <p>You can also do both these operations on the same line:</p>
+                <pre><code>let myVariable = "Bob";</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="container text-center my-5">
+            <h2 class="h2-2">Learn More</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4" id="HTML">
+                    <div class="card box bg-transparent border-0">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="image/téléchargement (1).png" class="align-items-lg-baseline w-100 rounded-5" alt="HTML">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold" style="margin:20px">HTML</h5>
+                            <p class="card-text">HTML is the standard markup language for Web pages. With HTML you can create your own Website</p>
+                            <a href="html.html" class="btn btn-outline-pink" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="CSS">
+                    <div class="card box bg-transparent border-0">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="image/téléchargement.png" class="align-items-lg-baseline w-100 rounded-5" alt="CSS">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold" style="margin:20px">CSS</h5>
+                            <p class="card-text">CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+                            <a href="css.html" class="btn btn-outline-pink" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="JavaScript">
+                    <div class="card box bg-transparent border-0">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="image/eba3983204f9f9c01dab4c54e33b2b9d9a2731e0.png" class="align-items-lg-baseline w-100 rounded-5" alt="JavaScript">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fs-4 fw-bold" style="margin:20px">JavaScript</h5>
+                            <p class="card-text">JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. JavaScript is easy to learn.</p>
+                            <a href="javascript.html" class="btn btn-outline-pink" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="text-center p-4" style="background-color: rgba(53, 53, 53, 0.05);">
+            <p>© 2023 Copyright WebCody</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYf

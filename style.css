@@ -1,0 +1,60 @@
+*{margin:0%;padding:0%;box-sizing: border-box;}
+body{
+    height:100%;
+    font-family: 'Roboto';
+    background-image: url(image/29bf1vqtsxzmq3qc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.navbar { 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+}
+header nav ul.action-menu .nav-item .nav-link {
+    margin: 0px 20px;
+    font-size: 18px;
+  }
+ .navbar-brand
+{
+    color: rgb(179, 76, 124);
+}
+ .navbar-toggler
+ {
+    outline: none!important;
+    outline-color: none;
+    padding: none!important;
+ }
+ .nav-link{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color:rgb(189, 37, 100);
+ }
+ span .text{
+    color:rgb(114, 8, 82)
+ }
+ .btn-outline-pink {
+    color: white;
+    border-color: #ff69b4;
+    background-color: #ff69b4;
+}
+.btn-outline-pink:hover {
+    background-color: #f6278e;
+    color: white;
+}
+ 
+ .h2{color:rgb(189, 37, 100)}
+ 
+ .h2-2{margin-top:50px; color:rgb(189, 37, 100)}
+ #AboutUs{margin:80px;}
+.card{
+    background-color: rgba(250, 183, 230, 0.1);
+    backdrop-filter: blur(3px);
+    
+    margin:50px;
+}
+
+   

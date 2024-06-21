@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics - WebCody</title>
+   
+    <link rel="icon" href="image/icon.jpg" class="rounded-pill">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Josefin+Sans:wght@500&family=Roboto:wght@500&family=Tajawal:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+              position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1030;
+        }
+        .navbar-brand img {
+            width: 70px;
+            border-radius: 50%;
+        }
+        .content {
+            padding: 100px 0;
+        }
+        .course-content {
+            max-width: 800px;
+            margin: auto;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="acceuil.html"><img src="image/icon.jpg" style="width:70px;" class="rounded-pill"> WebCody</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="acceuil.html">Home</a>
+                        </li>
+                    
+                   
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container course-content">
+                <h1>HTML Basics</h1>
+                <p>Welcome to the HTML Basics course! In this course, you will learn the fundamentals of HTML (HyperText Markup Language), which is the standard markup language used to create web pages.</p>
+                <h2>What is HTML?</h2>
+                <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating and structuring web pages and web applications. HTML provides the structure and content of a web page by using a set of elements and tags.</p>
+                
+                <h2>Why Learn HTML?</h2>
+                <p>Learning HTML is essential for anyone interested in web development, as it forms the foundation for creating web pages. HTML is easy to learn and allows you to create structured content that can be displayed on any web browser.</p>
+                
+                <h2>HTML Document Structure</h2>
+                <p>An HTML document is composed of several elements that define the structure and content of the page. The basic structure of an HTML document includes:</p>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declaration that specifies the HTML version.</li>
+                    <li><code>&lt;html&gt;</code>: Root element that wraps all content on the web page.</li>
+                    <li><code>&lt;head&gt;</code>: Container for meta-information about the HTML document, such as title, links to stylesheets, and scripts.</li>
+                    <li><code>&lt;body&gt;</code>: Container for the main content of the HTML document.</li>
+                </ul>
+                
+                <h2>HTML Elements and Tags</h2>
+                <p>HTML uses tags to define different types of content and elements on a web page. Tags are enclosed in angle brackets <code>&lt;&gt;</code>. Some commonly used HTML tags include:</p>
+                <ul>
+                    <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings of different levels.</li>
+                    <li><code>&lt;p&gt;</code>: Paragraphs of text.</li>
+                    <li><code>&lt;a&gt;</code>: Anchor tag used for creating hyperlinks.</li>
+                    <li><code>&lt;img&gt;</code>: Image tag for displaying images.</li>
+                    <li><code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>: Container tags used for grouping and styling content.</li>
+                </ul>
+                
+                <h2>HTML Attributes</h2>
+                <p>HTML attributes provide additional information about HTML elements and are always specified in the opening tag. Attributes modify the element's behavior or appearance. Examples of attributes include <code>id</code>, <code>class</code>, <code>src</code>, <code>href</code>, and <code>style</code>.</p>
+                
+                <h2>Creating Your First HTML Page</h2>
+                <p>Let's create a simple HTML page to understand the basic structure:</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+                
+                <h2>Next Steps</h2>
+                <p>Congratulations on completing the HTML Basics course! Now that you have a solid understanding of HTML fundamentals, you can continue to learn more about advanced HTML features, CSS for styling, and JavaScript for interactivity.</p>
+                
+                <a href="html.html" class="btn btn-outline-primary mt-3">Back to Courses</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <div class="container">
+            <p>&copy; 2023 WebCody. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

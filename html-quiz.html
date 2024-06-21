@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz - WebCody</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/icon.jpg" class="rounded-pill">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Josefin+Sans:wght@500&family=Roboto:wght@500&family=Tajawal:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+           
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1030;
+        }
+        .navbar-brand img {
+            width: 70px;
+            border-radius: 50%;
+        }
+        .navbar-brand img {
+            animation: spin 4s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .content {
+            padding: 100px 0;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.428);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+        }
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="acceuil.html"><img src="image/icon.jpg" alt="WebCody Logo"> WebCody</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="acceuil.html">Home</a>
+                        </li>
+                      
+                      
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container quiz-container">
+                <h1>HTML Quiz</h1>
+                <form id="quizForm" onsubmit="return false;">
+                    <div class="quiz-question">
+                        <p><strong>1. What does HTML stand for?</strong></p>
+                        <label><input type="radio" name="q1" value="a"> Hyperlinks and Text Markup Language</label><br>
+                        <label><input type="radio" name="q1" value="b"> Home Tool Markup Language</label><br>
+                        <label><input type="radio" name="q1" value="c"> Hyper Text Markup Language</label><br>
+                        <label><input type="radio" name="q1" value="d"> Hyperlinks and Text Markup Logics</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>2. Choose the correct HTML element for the largest heading:</strong></p>
+                        <label><input type="radio" name="q2" value="a"> &lt;head&gt;</label><br>
+                        <label><input type="radio" name="q2" value="b"> &lt;h1&gt;</label><br>
+                        <label><input type="radio" name="q2" value="c"> &lt;h6&gt;</label><br>
+                        <label><input type="radio" name="q2" value="d"> &lt;heading&gt;</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>3. Which HTML tag is used to define an unordered list?</strong></p>
+                        <label><input type="radio" name="q3" value="a"> &lt;ul&gt;</label><br>
+                        <label><input type="radio" name="q3" value="b"> &lt;ol&gt;</label><br>
+                        <label><input type="radio" name="q3" value="c"> &lt;li&gt;</label><br>
+                        <label><input type="radio" name="q3" value="d"> &lt;list&gt;</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>4. In HTML, which attribute is used to specify that an input field must be filled out?</strong></p>
+                        <label><input type="radio" name="q4" value="a"> required</label><br>
+                        <label><input type="radio" name="q4" value="b"> validate</label><br>
+                        <label><input type="radio" name="q4" value="c"> placeholder</label><br>
+                        <label><input type="radio" name="q4" value="d"> fillout</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>5. What is the correct HTML for creating a hyperlink?</strong></p>
+                        <label><input type="radio" name="q5" value="a"> &lt;a href="http://www.example.com"&gt;Example&lt;/a&gt;</label><br>
+                        <label><input type="radio" name="q5" value="b"> &lt;a name="http://www.example.com"&gt;Example&lt;/a&gt;</label><br>
+                        <label><input type="radio" name="q5" value="c"> &lt;href="http://www.example.com"&gt;Example&lt;/href&gt;</label><br>
+                        <label><input type="radio" name="q5" value="d"> &lt;link&gt;http://www.example.com&lt;/link&gt;</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>6. What is the correct HTML for inserting an image?</strong></p>
+                        <label><input type="radio" name="q6" value="a"> &lt;img src="image.jpg" alt="MyImage"&gt;</label><br>
+                        <label><input type="radio" name="q6" value="b"> &lt;image src="image.jpg" alt="MyImage"&gt;</label><br>
+                        <label><input type="radio" name="q6" value="c"> &lt;img alt="MyImage"&gt;image.jpg&lt;/img&gt;</label><br>
+                        <label><input type="radio" name="q6" value="d"> &lt;src="image.jpg" alt="MyImage"&gt;</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>7. Which HTML tag is used to define a paragraph?</strong></p>
+                        <label><input type="radio" name="q7" value="a"> &lt;paragraph&gt;</label><br>
+                        <label><input type="radio" name="q7" value="b"> &lt;p&gt;</label><br>
+                        <label><input type="radio" name="q7" value="c"> &lt;para&gt;</label><br>
+                        <label><input type="radio" name="q7" value="d"> &lt;pp&gt;</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>8. Which attribute is used to provide an advisory text about an element or its contents?</strong></p>
+                        <label><input type="radio" name="q8" value="a"> title</label><br>
+                        <label><input type="radio" name="q8" value="b"> alt</label><br>
+                        <label><input type="radio" name="q8" value="c"> role</label><br>
+                        <label><input type="radio" name="q8" value="d"> desc</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>9. What is the correct HTML for creating a table?</strong></p>
+                        <label><input type="radio" name="q9" value="a"> &lt;table&gt;&lt;tr&gt;&lt;td&gt;TableData&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</label><br>
+                        <label><input type="radio" name="q9" value="b"> &lt;table&gt;&lt;td&gt;TableData&lt;/td&gt;&lt;/table&gt;</label><br>
+                        <label><input type="radio" name="q9" value="c"> &lt;table&gt;&lt;tr&gt;&lt;tableData&gt;TableData&lt;/tableData&gt;&lt;/tr&gt;&lt;/table&gt;</label><br>
+                        <label><input type="radio" name="q9" value="d"> &lt;tableData&gt;Table&lt;/tableData&gt;</label>
+                    </div>
+
+                    <div class="quiz-question">
+                        <p><strong>10. What is the correct HTML for adding a background color?</strong></p>
+                        <label><input type="radio" name="q10" value="a"> &lt;background&gt;yellow&lt;/background&gt;</label><br>
+                        <label><input type="radio" name="q10" value="b"> &lt;body style="background-color:yellow;"&gt;</label><br>
+                        <label><input type="radio" name="q10" value="c"> &lt;body bg="yellow"&gt;</label><br>
+                        <label><input type="radio" name="q10" value="d"> &lt;body&gt;yellow&lt;/body&gt;</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Answers</button>
+                </form>
+
+                <div id="quizResults" class="mt-4">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 WebCody. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let score = 0;
+            const answers = ['c', 'b', 'a', 'a', 'a', 'a', 'b', 'a', 'a', 'b'];
+
+            for (let i = 1; i <= answers.length; i++) {
+                if (document.querySelector(`input[name="q${i}"]:checked`)) {
+                    if (document.querySelector(`input[name="q${i}"]:checked`).value === answers[i - 1]) {
+                        score++;
+                    }
+                }
+            }
+
+            const quizResults = document.getElementById('quizResults');
+            quizResults.innerHTML = `<h2>Your Quiz Results</h2>
+                                     <p>You got ${score} out of ${answers.length} questions correct.</p>`;
+        });
+    </script>
+</body>
+</html>
